@@ -1,0 +1,28 @@
+---
+title: "Exploring past literature: A bibliometric approach"
+author: "Tengku Muhammad Hanis Mokhtar"
+date: "November 27, 2022"
+output: 
+  html_document:
+    theme: readable  
+    highlight: tango 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, error=FALSE)
+```
+
+```{r echo=FALSE}
+library(tidyverse)
+library(bibliometrix)
+```
+
+```{r results='hide', echo=FALSE}
+dat <- convert2df("C:/Tengku/Sync_PC_Laptop/github/MYRUG2022-bibliometrics/data/covid_msia.bib", dbsource = "scopus", format = "bibtex")
+```
+
+```{r echo=FALSE}
+res <- biblioAnalysis(dat)
+summary(res, k = 10)
+```
+
