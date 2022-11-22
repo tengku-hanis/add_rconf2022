@@ -7,6 +7,13 @@ output:
     theme: readable  
     highlight: tango 
 ---
+<style type="text/css">
+.main-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, error=FALSE)
@@ -18,7 +25,7 @@ library(bibliometrix)
 ```
 
 ```{r results='hide', echo=FALSE}
-dat <- convert2df("C:/Tengku/Sync_PC_Laptop/github/MYRUG2022-bibliometrics/data/covid_msia.bib", dbsource = "scopus", format = "bibtex")
+dat <- convert2df("covid_msia.bib", dbsource = "scopus", format = "bibtex")
 ```
 
 ```{r echo=FALSE}
