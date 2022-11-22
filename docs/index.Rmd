@@ -1,5 +1,6 @@
 ---
 title: "Exploring past literature: A bibliometric approach"
+subtitle: "R confeRence 2022"
 author: "Tengku Muhammad Hanis Mokhtar"
 date: "November 27, 2022"
 output: 
